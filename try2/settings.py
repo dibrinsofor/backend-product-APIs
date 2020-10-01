@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'x7(tgf_(q$rhfj99e_bq4)b#&bzw(&3qj&1%^e(8v@ssevj7-c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["team-354-backend.herokuapp.com", "127.0.0.1"]
+ALLOWED_HOSTS = ["https://backendetourism.herokuapp.com/", "team-354-backend.herokuapp.com", "127.0.0.1"]
 
 
 # Application definition
@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'try2.urls'
@@ -125,3 +126,4 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
     )
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
