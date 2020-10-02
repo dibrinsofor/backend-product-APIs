@@ -58,7 +58,7 @@ def locationDelete(request, pk):
 
     return Response("Alaye! the location has been deleted")
 
-# @api_view(['GET'])
-# def detailView(request):
-#     locationn =location.objects.get.all()
-#     return location
+@api_view(['GET'])
+def detailView(request):
+    locationn =location.objects.get.all()
+    return location
