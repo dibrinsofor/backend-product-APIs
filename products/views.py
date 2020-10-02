@@ -6,7 +6,7 @@ from .serializers import LocationSerializer
 from .models import Locations
 
 # Create your views here.
-@api_view(['GET', 'POST', 'DELETE'])
+@api_view(['GET'])
 def apiOverview(request):
     api_urls = {
         'List':'/locations-list/',
@@ -58,7 +58,7 @@ def locationDelete(request, pk):
 
     return Response("Alaye! the location has been deleted")
 
-@api_view(['GET'])
-def detailView(request):
-    locationn =location.objects.get.all()
-    return location
+# @api_view(['GET'])
+# def detailView(request):
+#     locationn =location.objects.get.all()
+#     return location
