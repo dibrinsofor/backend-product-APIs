@@ -15,8 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.conf import settings
-from django.conf.urls.static import static
 
 from rest_framework import permissions
 from django.conf.urls import url
@@ -26,7 +24,7 @@ from products import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('products.urls')),
-    # path('api/', include('QRcodes.')),
-]+ static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
+    # path('api/', include('QRcodes.'))
+]
 
 # urlpatterns = format_suffix_patterns(urlpatterns) 
