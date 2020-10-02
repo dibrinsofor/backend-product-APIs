@@ -68,6 +68,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media'
             ],
         },
     },
@@ -75,7 +76,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'try2.wsgi.application'
 
-
+OPTIONS = 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
@@ -129,6 +130,10 @@ STATICFILES_DIRS = (
     )
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+MEDIA_ROOT= os.path.join(BASE_DIR, 'media/')
+MEDIA_URL= "/media/"
+
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
