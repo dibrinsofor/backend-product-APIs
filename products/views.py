@@ -10,10 +10,10 @@ from .models import Locations
 def apiOverview(request):
     api_urls = {
         'List':'/locations-list/',
-		'Detail View':'/locations-detail/<str:pk>/',
-		'Create':'/locations-create/',
-		'Update':'/locations-update/<str:pk>/',
-		'Delete':'/locations-delete/<str:pk>/',
+	'Detail View':'/locations-detail/<str:pk>/',
+	'Create':'/locations-create/',
+	'Update':'/locations-update/<str:pk>/',
+	'Delete':'/locations-delete/<str:pk>/',
     }
 
     return Response(api_urls)
