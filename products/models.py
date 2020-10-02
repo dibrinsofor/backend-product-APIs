@@ -1,11 +1,11 @@
 from django.db import models
 
 
-def upload_location(instance, filename, **kwargs):
-    file_path = '{author_id/}/{title}-{filename}'.format(
-        author_id = str(instance.author.id), title=str(instance.title), filename=filename
-    )
-    return file_path    
+# def upload_location(instance, filename, **kwargs):
+#     file_path = '{author_id/}/{title}-{filename}'.format(
+#         author_id = str(instance.author.id), title=str(instance.title), filename=filename
+#     )
+#     return file_path    
 
 
 # Create your models here.
@@ -14,7 +14,7 @@ class Locations(models.Model):
     location = models.CharField(max_length=20)
     locationDescription = models.CharField(max_length=140)
     country = models.CharField(max_length=20)
-    image = models.ImageField(upload_to=upload_location, null=False, blank=False)
+#     image = models.ImageField(upload_to=upload_location, null=False, blank=False)
 
     ###dont firget to add url path for image now
 
