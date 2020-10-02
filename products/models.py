@@ -18,7 +18,7 @@ class Locations(models.Model):
     locationDescription = models.CharField(max_length=140)
     country = models.CharField(max_length=20)
 #     image = models.ImageField(upload_to=upload_location, null=False, blank=False)
-    uploadImage = models.ImageField(upload_to = user_directory_path, null=False, blank=False)
+    uploadImage = models.ImageField(upload_to = user_directory_path, null=True, blank=False)
 
     ###dont firget to add url path for image now
 
