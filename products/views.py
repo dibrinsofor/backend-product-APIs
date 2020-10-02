@@ -4,6 +4,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .serializers import LocationSerializer
 from .models import Locations
+from .forms import ImageForm
 
 # Create your views here.
 @api_view(['GET', 'POST', 'DELETE'])
@@ -62,3 +63,23 @@ def locationDelete(request, pk):
 def detailView(request):
     locationn =location.objects.get.all()
     return location
+
+# def showimage(request):
+
+#     lastimage= Image.objects.last()
+
+#     imagefile= lastimage.imagefile
+
+
+#     form= ImageForm(request.POST or None, request.FILES or None)
+#     if form.is_valid():
+#         form.save()
+
+    
+#     context= {'imagefile': imagefile,
+#               'form': form
+#               }
+    
+      
+#     return render(request, 'Blog/images.html', context)
+
