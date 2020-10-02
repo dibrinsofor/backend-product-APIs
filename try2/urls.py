@@ -27,4 +27,4 @@ urlpatterns = [
     # path('api/', include('QRcodes.'))
 ]
 
-# urlpatterns = format_suffix_patterns(urlpatterns) 
+urlpatterns = format_suffix_patterns(urlpatterns) 
