@@ -6,7 +6,7 @@ from .serializers import LocationSerializer
 from .models import Locations
 
 # Create your views here.
-@api_view(['GET'])
+@api_view(['GET', 'POST', 'DELETE'])
 def apiOverview(request):
     api_urls = {
         'List':'/locations-list/',

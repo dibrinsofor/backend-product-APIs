@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+###
+from django.conf.urls.static import static
+from django.conf import settings
+
 from rest_framework import permissions
 from django.conf.urls import url
 from rest_framework.urlpatterns import format_suffix_patterns
@@ -27,4 +31,4 @@ urlpatterns = [
     # path('api/', include('QRcodes.'))
 ]
 
-# urlpatterns = format_suffix_patterns(urlpatterns) 
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
