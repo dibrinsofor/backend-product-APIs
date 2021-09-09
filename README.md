@@ -15,13 +15,13 @@ please do this at your own risk. this was made under stressful conditions and at
 
 but if you insist:
 ```
-git clone https://github.com/dibrinsofor/readme-template
+git clone https://github.com/dibrinsofor/backend-product-APIs
 ```
 once you've cloned the repo, navigate to the local directory and install all of the requirements in the "requirements.txt" file
 ```
 pip install -r requirements.txt
 ```
-and then....**drumroll
+😬 and then....**drumroll
 ```
 python manage.py runserver
 ```
@@ -38,7 +38,7 @@ this was built entirely with love on an eventful day with:
 - django serializers
 - django REST framework
 - hosted on heroku
-- <3
+- 💛 
 
 ### what's coming next
 we did not continue working on the project after we got cut and that sucks but you know. i plan to clean this up and undo some of the mistakes i made the first time
