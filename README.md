@@ -5,7 +5,7 @@
  a django-based backend with an api that should manage tourist locations: name of the place, brief description, pictures of the place and all of that. it also generates a unique QRcode for each location for users to scan if they want to see the tourist attraction or book a visit to said place
 
 ### why am i making it?
-i built this as part of my solution to the 2020 facebook build for sdg hackathon. it was a huge learning experience as is had to work with a deadline; i had just started to learn to use django and this experience forced me to learn in real time
+i built this as part of my solution to the 2020 facebook build for sdg hackathon. it was a huge learning experience as is had to work with a deadline; i had just started to learn to use django and this experience forced me to learn in real time. [you can also read about my experience building this](https://dibrinsofor.medium.com/a-retrospective-df3645003f90)
 
 ![gif of working prototype](https://pbs.twimg.com/media/EpZF-4tXcAQTTBe?format=jpg&name=900x900)
 <center style=color:grey;>a screenshot of the frontend</center>
